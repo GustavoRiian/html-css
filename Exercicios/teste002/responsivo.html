@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Responsividade</title>
+    <style>
+        body{
+            background-color: gray;
+        }
+
+        main{
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+
+/*------FAZENDO A RESPONSIVIDADE DO "TEXTO"------*/
+            min-width: 320px; /*LARGURA MINIMA*/
+            max-width: 800px; /*LARGURA MAXIMA*/
+            margin: auto; 
+        }
+/*-----FAZENDO A RESPONSIVIDADE DA "IMAGEM"-----*/
+        img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Testando Responsividade</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur in corporis assumenda doloribus exercitationem quam, quo eligendi accusantium facilis natus unde provident sapiente ab nobis nisi laudantium repellendus, aliquam deleniti. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque minus quis, voluptate fugit fugiat, ipsa a debitis excepturi iste sint eum. Voluptatem quia alias error atque ipsa, sunt praesentium odit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum libero repellat laudantium laboriosam ipsam eius autem expedita, iste, labore sit corporis laborum aspernatur doloribus earum facere, ex aliquam? Nam, repudiandae!</p>
+        <picture>
+<!--
+TERA IMAGEM NORMAL ATÉ CHEGAR EM 600PX, DEPOIS TROCA PARA IMAGEM PEQUENA. (TRABALHANDO COM 2 IMAGEM) EX: (<source media="(max-width: 600px)" srcset="imagens/irina-blok-pq.jpg">).     
+ -->
+            <source media="(max-width: 600px)" srcset="imagens/irina-blok-pq.jpg">
+        <img src="imagens/irina-blok.jpg"       alt="Irina Block">
+        </picture>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ducimus aliquam vel natus quod nulla dolorum eius, amet, consequuntur dignissimos enim corporis voluptas ipsum libero sequi, autem blanditiis molestiae doloribus?</p>
+    </main>
+    
+</body>
+</html>

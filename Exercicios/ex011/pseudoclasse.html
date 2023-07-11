@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Classes</title>
+<!--PSEUDO CLASSES SÃO PALAVRAS QUE DEFINEM ESTADO DE ELEMENTO DENTRO DA HTML-->
+    <style>
+        div{
+            display: inline-block;
+            background-color: lightgray;
+            /*SHORTHAND PARA SIMPLIFICAR O CODIGO*/
+            border: 1px solid black;
+            text-align: center; 
+            height: 200px;  /*ALTURA*/
+            width: 200px    /*LARGURA*/
+        }
+/*
+    (HOVER)-> FAZ UMA CONFIGURAÇÃO DE ESTADO, QUANDO PASSA O MOUSE POR CIMA ELE FAZ A MUDANÇA DE ESTADO. NO CASO A MUDANÇA DE ESTADO É PARA A "TAG DIV".
+*/
+        div:hover{
+            background-color: rgb(112, 112, 112);
+        }
+
+    </style>
+</head>
+<body>
+    <div id="d1">01</div>
+    <div id="d2">02</div>
+    <div id="d3">03</div>
+</body>
+</html>

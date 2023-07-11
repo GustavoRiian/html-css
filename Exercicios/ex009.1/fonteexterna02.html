@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas em Arquivos</title>
+    <style>
+        @font-face {
+            /*OBS: COLOCAR O ARQUIVO DA FONTE DENTRO DA PASTA HTML.
+            --------------------------------------------------------
+            COLOCAR UM NOME DE SUA ESCOLHA*/
+            font-family:"GalanoTeste";
+            /*(URL)-> COLOCAR A URL IGUAL O NOME DO ARQUIVO DA FONT.
+            (FORMAT)-> FORMATO DO ARQUIVO QUE O NAVEGADOR VAI LER.
+            */ 
+            src: url("fonts/GalanoGrotesqueAltBoldItalic.otf") format(opentype);
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face{
+            font-family:"Galanomedium";
+            src: url("fonts/Galano\ Grotesque\ Alt\ Medium\ Italic.otf") format(opentype), ;
+        }
+            
+/*
+TIPOS DE FORMAT DE TEXTO()
+- OPENTYPE (.OTF)
+- TRUETYPE  (.TTF)        
+- EMBEDDED-OPENTYPE
+- TRUETYPE-AAT  (APPLE ADVANCED TYPOGRAPHY)  
+- SVG     
+*/
+        
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1{
+            font-family: "GalanoTeste", "Times", "serif";
+            font-size: 3em;
+            font-weight: normal;
+        }
+
+        p{
+            font-family: "galanomedium", 'Times New Roman';
+            font-size: 16px;    
+            font-weight: normal;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Título</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde alias ex assumenda dolorum accusantium id perferendis hic, odio voluptate consectetur ipsum architecto quidem error vero quia maiores aspernatur impedit delectus!</p>
+    
+</body>
+</html>

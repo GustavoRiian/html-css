@@ -1,0 +1,14 @@
+/*ESSE É O CSS INSERIDOR POR LINK (ACESSO EXTERNO)*/
+/*(@CHARSET "UTF-8";)-> É UMA REGRA PARA ACENTUAÇÃO E TEM QUE SER USADO NO CSS*/
+@charset "UTF-8";
+
+body {
+    background-color:aqua;
+    font-family:sans-serif;
+    font-size: 20px;
+}
+
+h1 {
+    background-color: red;
+    color: white;
+}

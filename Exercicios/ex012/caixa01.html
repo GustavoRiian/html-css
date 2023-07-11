@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixa</title>
+    <style>
+
+        h1{ /*CAIXA DO TIPO BOX-LEVEL*/
+            background-color: aquamarine;
+            height: 300px; /*ALTURA*/
+            width: 300px;  /*LARGURA*/
+/*--------------------------------------------------------------------
+            border-width: 10px; (LARGURA DE TODAS AS BORDA)
+            border-style: solid;  (O TIPO DA BORDA.. "DASHED", "DOTTED", "DOUBLE", "GROOVE").
+            border-color: darkslategray; (COR DA BORDA)
+
+/*----------USANDO O SHORTHAND-------------------------------------*/
+            border: 10px solid darkslategray;
+
+
+
+/*--------------------------------------------------------------------
+            CRIA AS MARGENS DE DENTRO DA CAIXA COM O "PADDING". FUNCIONA SEMPRE COMO UM RELOGIO CIMA/DIREIRA/BAIXO/ESQUERDA.
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px; 
+            padding-left: 10px;
+
+            OBS: SE TODOS OS VALORES FOREM IGUAIS COLOCAR SÓ 1X EX:(PADDING:10PX).  
+            SE FOREM 2 VALORES IGUAIS, COLOCAR SÓ 2X EX:(PADDING:10PX(ENCIMA E BAIXO) 20PX(DIREITA E ESQUEDA) 
+
+ /*----------USANDO O SHORTHAND-------------------------------------*/
+            padding: 10px 10px 10px 10px; 
+
+
+
+/*--------------------------------------------------------------------
+            CRIA AS MARGENS DE FORA DA CAIXA COM O "MARGIN"
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            margin: AUTO; (PARA FICAR AO MEIO AUTOMATICAMENTE).
+
+/*----------USANDO O SHORTHAND--------------------------------------*/
+            margin: 20px auto 40px auto;
+
+
+
+/*-------------------------------------------------------------------
+            CRIA UMA OUTRA "BORDA AO FORA" DA BORDA PRINCIPAL
+            outline-width: 5px;
+            outline-style: groove;
+            outline-color: salmon;
+/*----------USANDO O SHORTHAND--------------------------------------*/
+            outline: 5px dashed salmon;
+
+        }
+
+
+
+    a{/*CAIXA DO TIPO INLINE-LEVEL*/
+        border-width: 10px;
+        border-style: solid; 
+        border-color: red;
+/*    
+OBS: PARA ELE SE TORNAR UM BLOCO (BOX-LEVEL), PODE SER INSERIDO O (DISPLAY: INLINE-BLOCK;) - E ASSIM VAI SER POSSIVEL TER AS CARACTERISTICASNORMAIS DE UM BLOCO ALTURA, LARGURA ETC....
+
+PARA TORNAR INLINE-LEVEL-> (DISPLAY: INLINE;) - E ASSIM OCUPAR SOMENTE
+O ESPAÇO QUE PRECISA.
+*/
+
+    }
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Caixa Box-Level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona</p>
+    
+</body>
+</html>

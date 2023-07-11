@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fortatação de Textos</title>
+    <!--COLOCANDO O STYLE NO DOCUMENTO COM SELETOR PRA 'MARK', ASSIM TODAS AS TAG COM 'MARK' FICA NA COR DO SELETO (VERDE). OBS:SE COLOCAR O STYLE DENTRO DA TAG <P> SO IRA AFETAR A TAG <P> -->
+    <style> 
+        mark{   
+            background-color: limegreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>Princiapis Formatações</h1>
+    <h2>Negrito / Destaques</h2>
+    <p>Nessa frase temos <b>termo em negrito</b> usando a tag B (não semântica)</p>
+    <p>Nessa frase tenho um <strong>termo em destaque</strong> usando a tag STRONG (semântica)</p>
+    <h2>Italico/Ênfase</h2>
+    <p>Nesta frase, temos um <i>termo em itálico</i> usandoa tag (não semântica).</p>
+    <p>Nesta frase, temos um termo em ênfase usadno a tag EM (semântica).</p>
+    <!--USAR CRTL+SHIFT+P -> ENVOLER COM ABREVIAÇÃO (EM) -> ESCOLHER A LETRA TAG, QUE NO CASO A CIMA FOI A 'P'.
+    ------------------------------------------------    
+    SEMANTICA É FORMA = CSS
+    NÃO SEMÂNTICA É SENTIDO = HTML-->
+    <h2> Texto marcado</h2>
+    <p>Podemos criar também <mark>um texto marcado</mark> usando a tag MARK.</p>
+    <p>E no outro paragrafo temos <mark>outro texto marcado</mark>no final.</p>
+    <h2>Texto Sobresquito</h2><!--PARA CIMA-->
+    <p>Para inserir coisas do tipo x<sup>20</sup>+3</p>
+    <h2>Texto Subscrito</h2> <!--PARA BAIXO-->
+    <p>Para inserir coisas do tipo H<sub>2</sub>O</p>
+
+    <!-- ------------------------------------------------ -->
+
+    <!-- (href="CRTL+ESPAÇO")-> ASSIM VOCÊ TERA OPÇÕES -->
+
+    <!--
+        TARGET='_SELF'-> A ABA SE ATUALIZA NA MESMA ABA.
+        TARGET='_BLANK'+REL='EXTERNAL'-> UMA NOVA ABA EM BRANCO E É UM   LINK EXTERNO. 
+        
+        REL="NOFOLLOW"-> QUANDO VOCÊ DIZ AO MECANISMO DE BUSCA QUE NÃO DA UM AVALPARA AQUELE CONTEUDO DO LINK. EX:UM SITE DE UM PATROCINADOR UM ANUCIO. (VISUALMENTE NÃO MUDA NADA)
+        
+        REL='NEXT'VOCÊ ESTÁ DIZENDO AO MECANISMO DE BUSCA QUE ESSA É A PROXIMA PAGINA. 
+        
+        REL='PREV'-> VOCÊ ESTÁ DIZENDO AO MECANISMO DE BUSCA QUE ESSA É A PAGINA ANTERIOR. 
+
+        ../-> ELE VOLTA PARA PAGINA FORA DAS PASTAS
+    -->
+    <h1>Links e Âncoreas</h1>
+    <h2>Links Externos</h2>
+    <p>EXEMPLO 01: Você pode fazer <a href="https://www.mercadolivre.com.br/"> Compras no meu Mercado Livre</a></p>
+
+    <p>EXEMPLO 02: Você pode fazer <a href="https://www.mercadolivre.com.br/" target="_blank" rel="external"> Compras no meu Mercado Livre</a></p>
+    
+
+    <h2>Links Internos</h2>
+    <p> Está é a primeira página do site. se você quiser, pode acessar também a minha <a href="pag2.html" rel="next">segunda pagina</a></p>
+    
+    <p>Acesse aqui a nossa página de <a href="noticias/pag3.html" rel="next">nóticias</a></p>    
+
+    <h1>Links para Donwload</h1>
+    <ul>
+        <li><a href="Livro/FOX-LOGO-ELIPSE.pdf">Baixar Livro em PDF</a></li>
+        <li><a href="Livro/FOX-LOGO-ELIPSE.zip" download="meulivro.zip" type="application/zip"> Baixar Livr compactado em ZIP</a></li>       
+    </ul>
+<!--TYPE='APPLICATION/ZIP' O TYPE MEDIA É UNICO PARA CADA TIPO EX: (TEXT/HTML, VIDEO/MP4, VIDEO/JPEG, IMAGE/JPEG, IMAGE/PNG, FONT/TFF)....-->
+</body>
+</html>

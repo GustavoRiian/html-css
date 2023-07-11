@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos Com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo Vídeos hospedado Localmente</h1>
+    <p>Video...</p>
+<!--PARAMETRO (POSTER)->SERVE PARA COLOCAR IMAGEM NO COMEÇO DO VIDEO.
+(WIDTH="560")-> LARGURA / (HEIGTH="315")->ALTURA.-->
+    <video controls poster="Imagem/Pele.negra.png" width="560" height="315" autoplay loop>
+        
+        <source src="Video/meu.video.normal.mp4" type="video/mp4">
+
+        <source src="Video/meu.video.ogv__.ogv" type="video/ogv"> 
+
+        <source src="Video/meu.video.wenv.webm" type="video/webm"> 
+
+        <source src="Video/meu.video.pequeno.mp4" type="video/mp4">
+
+        <p>Seu navegadro não tem compatibilidade com reprodutor de video, <a href="Video/meu.video.normal.mp4"></a>Clique aqui para baixar.</p>
+    </video> 
+
+    <h1> Inserindo Vídeos do YouTube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Tqe6SBIMzpU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<!--VIDEO COPIADO DO ("YOUTUBE") ("OPÇÃO COMPARTILHAR")-> ("INCORPORAR"). -->
+    </body>
+</html>

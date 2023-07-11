@@ -1,0 +1,42 @@
+@charset "UTF-8";
+/*
+    EM HTML É "ID" = EM CSS É "#"
+    EM HTML É "CLASS" = EM CSS É "."
+
+OBS:ID TORNA O H1 DIFERENTE DOS OUTROS H1, PARA MODIFICAÇÕES ESPECIFICAS NELE.
+*/
+
+
+body{
+    background-color: aquamarine;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+color: rgb(0, 139, 51);
+}
+
+h1#principal{
+    color: white;
+    text-align: center;
+    background-color: rgb(0, 139, 51);
+}
+
+h2{
+    color: rgb(0, 175, 35);
+}
+
+/*APLICANDO CLASS*/
+.basico{
+    color: rgb(0, 137, 75);
+    font-weight: bolder;
+}
+.intermediario{
+    color: rgb(0, 53, 81);
+}
+.avançado{
+    color: brown;
+}
+.destaque{
+    background-color: rgba(255, 255, 0, 0.489);
+}

@@ -1,0 +1,232 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family= Roboto & display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family= Roboto :wght@900 & display=swap');
+
+@font-face{
+    font-family:"android";
+    src:url(../fontes/idroid.otf) format("opentype");
+    /*PONTO PONTO É PQ PASTA ESTAVA DENTRO DE OUTRA PASTA.
+    .. = VOLTE UMA PASTA, E ABRA A PASTA 'FONTES'*/
+}
+
+
+
+/*SERVE PARA APLICAR A "ORIENTAÇÃO A OBJETO"
+FAZENDO COM QUE ESSAS TEG RECEBA ESSES VALORES DA COR.*/
+:root {
+    --cor0: #c5ebd6;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+
+    --fonte-padrao:'Roboto', sans-serif;
+    --fonte-destaque:'Roboto', sem serifa;
+    --fonte-android: 'Android', arial;
+}
+
+/*O '*' SELECIONA TODAS AS TAGS, NESSE CASO ELE ESTÁ 
+ZERNAOD TODAS AS MARGIN E PADDING DA PAGINA.*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body {
+    background-color: #c5ebd6;
+    font-family: var(--fonte-padrao);
+}
+
+/*ORIENTAÇÃO A OBJETO NO CSS---*/
+a.externo::after{
+    content: '\00A0\1F517';
+ /*É USADO (class="externo") NO HTML, PARA ASSIM COLOCAR O ICONE DA CORRENTE, SINALIZANDO SER UM LINK EXTERNO.*/   
+}
+
+/*
+main{
+    min-width: 320px; (LARGURA MINIMA)
+    max-width: 800px; (LARGURA MAXIMA)
+    margin: auto; 
+}*/
+
+header{
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+    min-height: 150px; /*ALTURA MINIMA*/
+    text-align: center;
+    padding-top: 40px;
+}
+
+header > h1 {
+    color: white;
+    font-family: var(--fonte-destaque);
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.336);
+}
+
+header > p {
+font-family:var(--fonte-padrao);    
+font-size: 1.2em;
+color: white;
+max-width: 500px;
+padding-right: 10px;
+padding-left: 10px;
+margin: auto;
+}
+
+nav{
+    background-color: var(--cor5);
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.371);
+}
+
+/*NAV O LINK QUE ESTÁ DENTRO DE (NAV)->(A)
+VAI RECEBER ESSAS CARACTERISTICAS.*/
+nav > a {
+    color: var(--cor1);
+    padding: 10px;  /*ESPAÇAMENTO*/
+    border-radius: 5px; /*ARREDONDAR A BORDA*/
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: .5s; /*DURAÇÃO DO EFEITO*/
+}
+
+/*EFEITOS DE TRANSIÇÃO,QUANDO PASSAR O MOUSE NO LINK QUE ESTÁ DENTRO DE (NAV)>A:HOUVER*/
+nav > a:hover{
+    background-color: var(--cor3);
+    color: var(--cor5);
+}
+
+main{
+    background-color: white;
+    min-width: 315px; /*LARGURA MINIMA*/
+    max-width: 800px; /*LARGURA MAXIMA*/
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgb(0, 100, 0);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;   
+    /*FAZ COM QUE SO AS BORDAS DE BAIXO 
+    SEJAM ARREDONDADAS*/
+}
+
+main h1 {
+    color: #1a5c37;
+    font-family: var(--fonte-android);
+    font-weight: normal;
+}
+
+main h2 {
+    color: #1a5c37;
+    font-family: var(--fonte-android);
+    font-size: 1.1;
+    font-weight: normal;
+    background-image: linear-gradient(to right, var(--cor1),transparent);
+    /*UM GRADIENTE DA DIREITA PARA ESQUERDA.*/
+    text-indent: 8px; /*RECUO DO TEXTO*/
+}
+
+main p{ 
+/*MODIFICAÇÕES DA FORMATAÇÃO E MARGENS DO TEXTO*/
+    margin: 15px 0px; /*MARGENS.*/
+    text-align: justify; /*JUSTIFICAR TEXTO.*/
+    text-indent: 30px; /*ESPAÇAMENTO NO COMEÇO.*/
+    font-size: 1em; /*EMGROSSAR A FONTE.*/
+    line-height: 1.5em; /*ESPAÇAMENTO ENTRE AS LINHAS.*/
+}
+
+main strong{ 
+/*MODIFICAÇÕES DE PALAVRAS EM NEGRITO*/  
+    color: var(--cor4);
+    font-weight: bold;
+}
+
+main a {
+/*MODIFICAÇÕES DE LINKS*/    
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor5);
+    background-color: var(--cor1);
+    padding: 2px 6px;
+}
+
+main a:hover{
+/*MODIFICAÇÕES DOS LINKS*/  
+    text-decoration: underline;
+    color: var(--cor4);
+}
+
+
+
+main img{
+    width: 100%;
+}
+
+/*UMA IMAGEM POR PADRÃO NÃO É UM BLOCO
+ENTÃO SE USAR O "DISPLAY:BLOCK;" PARA 
+TORNAR UM.*/
+main img.pequena{
+max-width: 350px;
+display: block;
+margin: auto;
+}
+
+/*ADAPTAR O VIDEO DE LINK EXTERNO
+É PRECISO SE AJUTAR, POIS É RELATIVO
+DE CADA VIDEO.*/
+div.video {
+    background-color: var(--cor5);
+    margin: 0px -20px 30px -20px;
+    padding: 5px;
+    padding-bottom: 59%;
+    position: relative;
+}
+
+div.video > iframe {
+position: absolute;
+top: 5%;
+left: 5%; /*ESQUERDA*/
+width: 90%; /*LARGURA*/
+height: 90%; /*ALTURA*/
+}
+
+/*AJEITANDO A PARTE DE BAIXO E RODA PÉ DO SITE.*/
+aside{
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.215);
+}
+
+aside > h3 {
+    background-color: var(--cor4);
+    color: white;
+    padding: 6px;
+    margin: -10px -10px 0px -10px;
+    /*A MARGEM DE: 
+    (CIMA:-10) (DIREITA:-10) 
+    (BAIXO:0) (ESQUERDA:-10)*/
+    border-radius: 10px 10px 0 0;
+    /*A BORDA SERÁ ARREDONDADA: 
+    (CIMA ESQUERDA:10) (CIMA DIREITA:10) 
+    (BAIXO DIREITA:0) (BAIXO ESQUERDA:0)*/
+}
+
+aside > ul {
+/*COLOCANDO O EMOJI DO "CHECK" - O "00A0" SERVE PARA DAR ESPAÇO.*/    
+list-style-type: '\2705\00A0\00A0'; 
+list-style-position: inside; /*DEIXAR MAIS PARA DENTRO.*/
+columns: 2; /*PARA DIVIDIR EM 2 COLUNAS.*/
+}
+
+footer{
+    background-color: var(--cor5);
+    color: white;
+    text-align: center;
+    font-size: 0.8;
+}
