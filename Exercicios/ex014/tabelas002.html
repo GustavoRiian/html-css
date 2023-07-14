@@ -26,13 +26,18 @@
         }
 
         thead, tfoot{
-            background-color: gray;
+            background-color: rgb(46, 46, 46);
             color: white;
         }
 
         td.num{
             text-align: right;
             /*SOMENTE OS TD.NUM*/
+        }
+
+        tbody > tr:nth-child(2n) {
+/*tr:nth-child(2n) -> 2 EM 2 ADICIONA A COR CINZA, PODE USAR O TERMO "ODD" (ÍMPAR)/"EVEN (PAR)*/
+            background-color: rgb(209, 209, 209);
         }
 
 
@@ -71,6 +76,26 @@
             <tr>
                 <td>Rio de Janeiro</td>
                 <td class="num">17 264 943</td>
+            </tr>
+
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">17 264 780</td>
+            </tr>
+
+            <tr>
+                <td>Ceará</td>
+                <td class="num">9 132 078</td>
+            </tr>
+
+            <tr>
+                <td>Pará</td>
+                <td class="num">8 602 865</td>
+            </tr>
+
+            <tr>
+                <td>Goiás</td>
+                <td class="num">7 018 650</td>
             </tr>
         </tbody>
 
