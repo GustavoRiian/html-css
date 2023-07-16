@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio</title>
+    <style>
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        caption{
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+
+        th, td{
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        col.cgrupo{
+            background-color: red;
+        }
+
+        col.cnome{
+            background-color: greenyellow;
+        }
+
+        col.cidade{
+            background-color: aquamarine;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Exercício de Tabela colgroup</h1>
+
+    <table>
+        <colgroup> 
+<!--SELECIONA AS COLUNAS PARA E DA UMA CLASSE A CADA UMA.-->
+            <col class="cnome">
+            <col class="cgrupo" span="2">
+<!--PODE USAR O (SPAN="2") PARA AGREGAR DUAS COLUNAS-->
+            <col class="cidade">
+            <col class="cprof">
+        </colgroup>
+
+        <caption>Cadastro</caption>
+        <tr>
+            <th>Nome</th>
+            <th>Sexo</th>
+            <th>Idade</th>
+            <th>Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Julho</td>
+            <td>M</td>
+            <td>28</td>
+            <td>Professor</td>
+        </tr>
+        <tr>
+            <td>Diego</td>
+            <td>M</td>
+            <td>39</td>
+            <td>Analista</td>
+        </tr>
+        <tr>
+            <td>Michele</td>
+            <td>M</td>
+            <td>78</td>
+            <td>Mecânico</td>
+        </tr>
+        <tr>
+            <td>Daniela</td>
+            <td>F</td>
+            <td>26</td>
+            <td>Esteticista</td>
+        </tr>
+        <tr>
+            <td>Lucas</td>
+            <td>M</td>
+            <td>57</td>
+            <td>Médico</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
+
+
+
+<!--
+    USO DE TABELAS GRANDES
+        TABLE
+            THEAD(CABEÇA)
+                TR(LINHAS), TD(DADOS), TH(TITULO)
+            TBODY(CORPO)
+                TR, TD, TH
+            TFOOT(RODAPÉ)
+                TR, TD, TH
+-->
+<!--CAPTION=LEGENDA DA TABELA -->
+<!--SCOPE="COLGROUP"-> SE USA QUANDO É UM GRUPO DE COLUNAS-->
+<!--SCOPE="ROWGROUP"-> SE USA QUANDO É UM GRUPO DE LINHAS-->
+<!--COLSPAN="2"-> FAZ COM QUE OCUPE 2 CELULAS LATERAIS-->
+<!--ROWSPAN="3"-> FAZ COM QUE OCUPE 2 CELULAS A BAIXO-->
