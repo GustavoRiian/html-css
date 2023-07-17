@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos de IFrame</title>
+    <style>
+        iframe{
+            width: 300px; /*LARGURA*/
+            height: 200px; /*ALTURA*/
+            border: 1px solid black;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <!--TAMANHO PADRÃO DO IFRAME 300X150-->
+
+    <h1>Testando o uso de um Iframe</h1>
+    <p>Acessando o site do <iframe src="https://www.mercadolivre.com.br/" frameborder="0" >
+
+    </iframe>Mercado Livre para comprar.</p>
+
+    <!--
+frameborder="0"OU"1"-> CRIA UMA BORDA NO IFRAME.
+---------------------------------------------------------
+ESSE PARAMETRO,NÃO FUNCIONA EM TODOS OS NAVEGADORES 
+      ------JÁ É "AUTO" AUTOMATICAMENTE------ 
+
+SCOLLING="AUTO" -> 
+SE O CONTEUDO EXEDER, APARECE BARRA DE ROLAGEM NA JANELA DO IFRAME.
+
+SCOLLING="YES" ->
+MESMO SE O CONTEUDO COUBER EM TODA JANELA, VAI APARECER A BARRA DE ROLAGEM NA JANELA DO IFRAME.
+
+SCOLLING="NO" ->
+MESMO SE O CONTEUDO FOR MAIOR QUE A JANELA, NÃO VAI APARECER A BARRA DE ROLAGEM NA JENELA NO IFRAME.
+---------------------------------------------------------
+ESSE IFRAME CRIA UMA JANELA NA SUA PAGINA, "NÃO FUNCIONA COM TODOS OS SITES"
+    -->
+
+
+
+
+    <P>Acessando site do <iframe src="https://www.google.com.br/?hl=pt-BR" frameborder="0"></a>
+    </iframe>
+    Google, e no caso ele não permite o uso do site como Iframe.
+</P>
+    
+</body>
+</html>
