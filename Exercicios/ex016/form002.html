@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Testes de Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="iusu">Usuário:</label>
+            <input type="text" name="usu" id="iusu" required size="20" placeholder="Nome do usúario">
+<!-------------------------------------------------
+(REQUIRED)-> PREENCHIMENTO OBRIGATORIO.
+(MIMLENGTH="8")-> QUANTIDADE MIM DE CARACTERES.
+(maxlength="10")-> QUANTIDADE MAX DE CARACTERES.
+(size="20")-> QUANTAS LETRAS VÃO MOSTRAR POR VEZ.
+(placeholder="DICA")-> DICA PARA USÚARIO.
+(AUTOCOMPLETE="ON/OFF")-> MOSTRA UM OPÇÃO JÁ PREENCHIDA.
+-------------------------------------------------->
+        </p>
+        <p>
+            <label for="isen">Senha:</label>
+            <input type="password" nome="sen" id="isen" required minlength="8" maxlength="10">
+        </p>
+        <p>
+            <!--CRIA OS BOTES DE ENVIAR E LIMPAR-->
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+</body>
+</html>
