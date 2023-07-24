@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Teste de Formulário 05</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="isxmas">
+            <label for="isxmas">Masculino</label><br>
+<!--BOTÃO DE "RADIO" SO PODE ESCOLHER 1 OPÇÃO E
+PRECISA TER O MESMO "NAME"-->
+
+            <input type="radio" name="sexo" id="isxfem">
+            <label for="isxfem">Feminino</label><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+            
+            <input type="checkbox" name="esbas" id="iesbas">
+            <label for="iesbas">Basquete</label><br>
+            
+            <input type="checkbox" name="esfut" id="iesfut">
+            <label for="iesfut">Futebol</label><br>
+
+            <input type="checkbox" name="esnat" id="iesnat">
+            <label for="iesnat">Natação</label><br>
+
+            <input type="checkbox" name="esten" id="iesten">
+            <label for="iesten">Tênis</label><br>
+        </fieldset>
+
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </p>
+
+
+</form>
+</body>
+</html>
+
+
+<!-------------------------------------------------
+(REQUIRED)-> PREENCHIMENTO OBRIGATORIO.
+(MIMLENGTH="8")-> QUANTIDADE MIM DE CARACTERES.
+(maxlength="10")-> QUANTIDADE MAX DE CARACTERES.
+(mim="0"OU max="10") QUANTIDADE DE NUMEROS.
+(size="20")-> QUANTAS LETRAS VÃO MOSTRAR POR VEZ.
+(placeholder="DICA")-> DICA PARA USÚARIO.
+(AUTOCOMPLETE="ON/OFF")-> MOSTRA UM OPÇÃO JÁ PREENCHIDA.
+(step="0.5")-> DE QUANTO EM QUANTO A NOTA VAI MUDAR.
+(autocomplete="email")
+(pattern=)"!\(\d{2}\)\d{4,5}-\d{4}$" ->ANTES DO TRAÇO,PODE DIGITAR NUMEROS DE 0 A 9 ATÉ 4 DIGITOS DEPOIS DO TRAÇO A MESMA COISA.
+(<fieldset>) AGRUPA CAMPOS SEMELHANTES (<legend>)-> CRIA UMA LEGENDA.
+
+
+------  --------  --- INPUTS ---  --------  ------
+<input type="QUAL O TIPO?" name="NOME" id="I+NOME?">
+<input type="submit" value="Enviar">
+
+TYPES 
+
+(text)/TEXTO.
+(submit)/ENVIAR.
+(reset)/LIMPAR.
+
+type="month"
+(MONTH) CRIA UMA TABELA DE MÊS E ANO .
+
+type="date"
+(DATE) CRIA UMA TABELA DIA, MÊS E ANO.
+
+type="checkbox"
+CHECKBOX CRIA UMA CAIXA PARA MARCAÇÃO.
+
+type="file"
+PARA ENVIAR UMA FOTO / OBS: SE A IMG PASSAR DE 3MIL BYTES TEM QUE MUDAR O METODO PARA "POST".
+-------------------------------------------------->
