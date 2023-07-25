@@ -2,7 +2,7 @@
 
 /*VERSÃO MOBILE FIRST*/
 
-*{
+* {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1;
     margin: 0px;
@@ -11,7 +11,6 @@
 }
 
 html{
-    width: 100vw;
     height: 100vh;
 }
 
@@ -25,7 +24,6 @@ main{
     background-color: rgba(255, 255, 255, 0.807);
     width: 100vw;
     margin: auto;
-    margin-top: 20px;
     border-radius: 10px;
     padding: 10px;
 }
@@ -43,7 +41,7 @@ img{
     /*PARA CENTRALIZAR*/
 }
 
-/*PARA BLOQUEAR AS IMAGENS E MSOTRAR SÓ DO INTERESSE*/
+/*PARA BLOQUEAR AS IMAGENS ICONES E MOSTRA SOMENTE A NESCESSARIA*/
 img#phone{display: block;}
 img#tablet{display: none;}
 img#print{display: none;}
