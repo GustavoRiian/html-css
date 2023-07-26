@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
 
-    <!--PARA USAR ICONS POR (LINKS)-->
+    <!--PARA USAR ICONS POR (LINKS) "JS"-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
-<body>
+<!--ESSA FUNCIONALIDADE É PARA, QUANDO O MUDAR TAMANHO "JS"-->
+<body onresize="mudouTamanho">
     <header>
         <h1>Meu Site</h1>
         <!--PARA USAR ICONS POR (LINKS)-->
@@ -36,17 +38,31 @@
         </article>
     </main>
     <script>
-        /*LEITURA EM JAVASCRIPT->  
-        (IF/SE) O MENU ESTÁ SENDO EXIBIDO E O 
-        USUARIO CLICAR ELE ESCONDE (SE NÃO/ELSE)
-        CASO ELE ESTEJA FECHADO ELE MOSTRA
-        (= RECEBE / == IGUAL)*/
+        function mudouTamanho(){
+            if(window.innerWidth >= 768){
+                menus.style.display = 'block'
+            } else{
+                menus.style.display = 'none'
+            }
+/*---------------------------------------------------
+LEITURA EM JAVASCRIPT->  
+(IF/SE) FOR MAIOR OU IGUAL A 768px, MANDA MOSTRAR EM
+BLOCO FORÇADAMENTE. (SE NÃO/ELSE) ELE MOSTRA
+(= RECEBE / == IGUAL)
+-----------------------------------------------------*/
+        }
+
         function clickMenu(){
             if(menus.style.display == 'block'){          
                menus.style.display = 'none'
             } else{
                menus.style.display = 'block'
             }
+/*---------------------------------------------------
+LEITURA EM JAVASCRIPT->  
+(IF/SE) O, MENU ESTÁ SENDO EXIBIDO E O USUARIO CLICAR, ELE ESCONDE. (SE NÃO/ELSE) CASO ELE ESTEJA FECHADO, ELE MOSTRA.
+(= RECEBE / == IGUAL)
+-----------------------------------------------------*/
         }
     </script>
 </body>
