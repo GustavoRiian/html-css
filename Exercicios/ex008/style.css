@@ -12,16 +12,9 @@ main{
     background-color: white;
     border-radius: 10px;
     box-shadow: 5px 5px 15px rgba(122, 122, 122, 0.419);
-    /*
-    (box-shadow)
-    1° PARAMETRO QUANTO A SOMBRA ANDA PARA O LADO. 
-    2° PARAMETRO QUANTO A SOMBRA ANDA PARA BAIXO.
-    3° PARAMETRO QUANTO A SOMBRA VAI ESPALHAR.
-    4° PARAMETRO QUANTO A SOMBRA VAI TER DE TRANSPARENCIA.
-    */
     width: 600px;
     padding: 10px;
-    margin: auto;
+    margin: center;
 }
 
 h1{
