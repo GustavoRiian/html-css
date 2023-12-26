@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+/* Estilo para impressoras */
+
+*{
+    margin: 10px;
+    padding: 10px;
+}
+
+html{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+menu{
+/*Significa que o menu não vai aparecer*/
+    display: none;
+}
+
+/*Depois(after) do artigo*/
+article::after{
+    content: 'Esse artigo foi impresso através do www.gr.desiigner.com';
+}
+
+/*Para ocupar 100% do papel na impressão*/
+article{
+    width: 100%;
+}
+
